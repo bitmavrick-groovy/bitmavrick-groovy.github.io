@@ -1,593 +1,292 @@
 <!DOCTYPE html>
-<html class="no-js" lang="en">
-
+<html lang="en">
 <head>
-
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-NV3KX2T8CN"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
-
         gtag('config', 'G-NV3KX2T8CN');
     </script>
 
-    <!-- Basic Page Needs
-    ================================================== -->
     <meta charset="utf-8">
     <title>Groovy Music - Free Offline Music Player App</title>
-    <meta name="description"
-        content="Groovy is a stylish, fast, and offline music player app that makes your listening experience smoother and more fun. Download now and enjoy your favorite songs!">
+    <meta name="description" content="Groovy is a stylish, fast, and offline music player app that makes your listening experience smoother and more fun. Built with Material You.">
     <meta name="author" content="BitMavrick">
-
-    <!-- Mobile Specific Metas
-    ================================================== -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Open Graph Meta (for Facebook, LinkedIn etc.)
-    ================================================== -->
+    <!-- Open Graph Meta -->
     <meta property="og:title" content="Groovy Music - Free Offline Music Player App">
-    <meta property="og:description"
-        content="Experience music like never before with Groovy. Offline support, beautiful UI, and advanced audio features.">
+    <meta property="og:description" content="Experience music like never before with Groovy. Offline support, beautiful Material You UI, and advanced audio features.">
     <meta property="og:image" content="https://bitmavrick-groovy.github.io/images/iphone-app-940.png">
-    <!-- Add actual image URL -->
     <meta property="og:url" content="https://bitmavrick-groovy.github.io/">
     <meta property="og:type" content="website">
 
-    <!-- Twitter Card Meta
-    ================================================== -->
+    <!-- Twitter Card Meta -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Groovy - Free Offline Music Player App">
-    <meta name="twitter:description"
-        content="Listen to your favorite tracks anytime, anywhere with Groovy. Offline playback, sleek UI, and more.">
+    <meta name="twitter:description" content="Listen to your favorite tracks anytime, anywhere with Groovy. Offline playback, sleek Material You UI, and more.">
     <meta name="twitter:image" content="https://bitmavrick-groovy.github.io/images/app-screens-2800.png">
 
-    <!-- Canonical URL -->
     <link rel="canonical" href="https://bitmavrick-groovy.github.io">
 
-    <!-- Structured Data (Optional but Powerful) -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "SoftwareApplication",
-      "name": "Groovy Music Player",
-      "operatingSystem": "Android",
-      "applicationCategory": "MultimediaApplication",
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.8",
-        "ratingCount": "850"
-      },
-      "offers": {
-        "@type": "Offer",
-        "price": "0",
-        "priceCurrency": "USD"
-      }
-    }
-    </script>
+    <!-- Google Fonts: Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Icons (Phosphor Icons for modern look) -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
 
-    <!-- CSS Files -->
-    <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/vendor.css">
-    <link rel="stylesheet" href="css/main.css">
-
-    <!-- JS Scripts -->
-    <script src="js/modernizr.js"></script>
-    <script src="js/pace.min.js"></script>
-
-    <!-- Favicons -->
+    <!-- New CSS -->
+    <link rel="stylesheet" href="css/material-you.css">
     <link rel="shortcut icon" href="favicon.svg" type="image/x-icon">
-    <link rel="icon" href="favicon.svg" type="image/x-icon">
-
 </head>
 
-<body id="top">
+<body>
 
-    <!-- header 
-   ================================================== -->
-    <header id="header" class="row">
-
-        <div class="header-logo">
-            <a href="index.html">Groovy Music</a>
-        </div>
-
-        <nav id="header-nav-wrap">
-            <ul class="header-main-nav">
-                <li class="current"><a class="smoothscroll" href="#home" title="home">Home</a></li>
-                <li><a class="smoothscroll" href="#about" title="about">About</a></li>
-                <li><a class="smoothscroll" href="#pricing" title="pricing">Pricing</a></li>
-                <li><a class="smoothscroll" href="#testimonials" title="testimonials">Testimonials</a></li>
-                <li><a class="smoothscroll" href="#download" title="download">Download</a></li>
+    <!-- App Bar -->
+    <header class="app-bar container">
+        <a href="index.html" class="brand">
+            <i class="ph-fill ph-music-notes"></i>
+            Groovy Music
+        </a>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#download" class="btn btn-tonal">Download</a></li>
             </ul>
         </nav>
+    </header>
 
-        <a class="header-menu-toggle" href="#"><span>Menu</span></a>
-
-    </header> <!-- /header -->
-
-
-    <!-- home
-   ================================================== -->
-    <section id="home" data-parallax="scroll" data-image-src="images/hero-bg.webp" data-natural-width=3000
-        data-natural-height=2000>
-
-        <div class="overlay"></div>
-        <div class="home-content">
-
-            <div class="row contents">
-                <div class="home-content-left">
-
-                    <a href="https://www.producthunt.com/products/groovy-music-player?embed=true&amp;utm_source=badge-featured&amp;utm_medium=badge&amp;utm_campaign=badge-groovy-music-player" target="_blank" rel="noopener noreferrer"><img alt="Groovy - Music Player - Groovy Music Player – Beautiful, Powerful, Offline Music | Product Hunt" width="250" height="54" src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=1075803&amp;theme=neutral&amp;t=1770571881642"></a>
-                    <br>
-                    <br>
-
-                    <h3 data-aos="fade-up">Welcome to Groovy</h3>
-
-                    <h1 data-aos="fade-up">
-                        Experience Music Like Never Before.<br>
-                        A Sleek & Powerful
-                        Music Player for you.
-                    </h1>
-
-
-                    <div class="buttons" data-aos="fade-up">
-                        <a href="https://play.google.com/store/apps/details?id=com.bitmavrick.groovy"
-                            class="button stroke">
-                            <span class="icon-circle-down" aria-hidden="true"></span>
-                            Download Now
-                        </a>
-                    </div>
-
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <a href="https://www.producthunt.com/products/groovy-music-player" target="_blank" rel="noopener noreferrer" style="display:inline-block; margin-bottom: 2rem;">
+                    <img alt="Groovy on Product Hunt" width="250" height="54" src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=1075803&theme=neutral" style="border-radius: 8px;">
+                </a>
+                
+                <h1>Your Music, Your Vibe.</h1>
+                <p class="lead">Enjoy your music the way it was meant to be with Groovy, a modern offline music player designed for Android. Built with Google's Material You design system, Groovy delivers a clean, smooth, and intuitive experience while keeping your music library completely on your device.</p>
+                
+                <div class="flex gap-4" style="flex-wrap: wrap;">
+                    <a href="https://play.google.com/store/apps/details?id=com.bitmavrick.groovy" class="btn btn-primary">
+                        <i class="ph-fill ph-google-play-logo"></i> Download on Google Play
+                    </a>
+                    <a href="#" class="btn btn-tonal">
+                        <i class="ph-fill ph-gift"></i> Request Free Promo Code
+                    </a>
                 </div>
-
-                <div class="home-image-right">
-                    <img src="images/iphone-app-470.png"
-                        srcset="images/iphone-app-470.png 1x, images/iphone-app-940.png 2x" data-aos="fade-up">
-                </div>
-
             </div>
-
-        </div> <!-- end home-content -->
-
-        <ul class="home-social-list">
-            <li>
-                <a href="https://github.com/BitMavrick"><i class="fa fa-github"></i></a>
-            </li>
-            <li>
-                <a href="https://x.com/TheAlter72"><i class="fa fa-twitter"></i></a>
-            </li>
-            <li>
-                <a href="https://www.instagram.com/_bitmavrick"><i class="fa fa-instagram"></i></a>
-            </li>
-            <li>
-                <a href="https://www.youtube.com/@BitMavrick"><i class="fa fa-youtube-play"></i></a>
-            </li>
-        </ul>
-        <!-- end home-social-list -->
-
-        <div class="home-scrolldown">
-            <a href="#about" class="scroll-icon smoothscroll">
-                <span>Scroll Down</span>
-                <i class="icon-arrow-right" aria-hidden="true"></i>
-            </a>
-        </div>
-
-    </section> <!-- end home -->
-
-
-    <!-- about
-    ================================================== -->
-    <section id="about">
-
-        <div class="row about-intro">
-
-            <div class="col-four">
-                <h1 class="intro-header" data-aos="fade-up">About Our App</h1>
-            </div>
-            <div class="col-eight">
-                <p class="lead" data-aos="fade-up">
-                    Groovy is a sleek, lightweight, and feature-packed offline music player app designed for true music
-                    lovers.
-                    With a sleek material interface and powerful playback controls, Groovy lets you enjoy your favorite
-                    tunes
-                    the way they were meant to be heard. Whether you're creating playlists, customizing the sound, or
-                    enjoying gapless playback, Groovy delivers an immersive music experience.
-                </p>
-            </div>
-
-        </div>
-
-        <div class="row about-features">
-
-            <div class="features-list block-1-3 block-m-1-2 block-mob-full group">
-
-                <div class="bgrid feature" data-aos="fade-up">
-
-                    <span class="icon"><i class="icon-block"></i></span>
-
-                    <div class="service-content">
-
-                        <h3>No Ads</h3>
-
-                        <p>Enjoy your music without interruptions! Groovy is completely ad-free, giving you a smooth and
-                            distraction-free listening experience. No pop-ups, no banners—just pure music.</p>
-
-                    </div>
-
-                </div> <!-- /bgrid -->
-
-                <div class="bgrid feature" data-aos="fade-up">
-
-                    <span class="icon"><i class="icon-paint-brush"></i></span>
-
-                    <div class="service-content">
-                        <h3>Material You Design</h3>
-
-                        <p>Groovy embraces Material You, adapting dynamically to your system theme and colors for a
-                            personalized and modern music experience that blends perfectly with your device’s UI.</p>
-
-                    </div>
-
-                </div> <!-- /bgrid -->
-
-                <div class="bgrid feature" data-aos="fade-up">
-
-                    <span class="icon"><i class="icon-play"></i></span>
-
-                    <div class="service-content">
-                        <h3>Easy to Use</h3>
-
-                        <p>Simple, intuitive, and effortless. Groovy is designed with ease of use in mind, ensuring that
-                            you can browse, play, and manage your music with just a few taps.</p>
-
-                    </div>
-
-                </div> <!-- /bgrid -->
-
-                <div class="bgrid feature" data-aos="fade-up">
-
-                    <span class="icon"><i class="icon-shield"></i></span>
-
-                    <div class="service-content">
-                        <h3>Privacy Focused</h3>
-
-                        <p>Your data stays yours. Groovy doesn’t track, collect, or share your personal data, ensuring a
-                            completely private and secure music experience.</p>
-
-                    </div>
-
-                </div> <!-- /bgrid -->
-
-                <div class="bgrid feature" data-aos="fade-up">
-
-                    <span class="icon"><i class="icon-sliders"></i></span>
-
-                    <div class="service-content">
-                        <h3>Customization Options</h3>
-
-                        <p>Make Groovy truly yours! Choose from different themes, adjust playback settings, and tweak
-                            the UI to match your personal preferences.</p>
-                    </div>
-
-                </div> <!-- /bgrid -->
-
-                <div class="bgrid feature" data-aos="fade-up">
-
-                    <span class="icon"><i class="icon-brush"></i></span>
-
-                    <div class="service-content">
-                        <h3>Lightweight App</h3>
-
-                        <p>Groovy is optimized to be fast and efficient, ensuring smooth performance without consuming
-                            unnecessary storage or battery life on your device.</p>
-
-                    </div>
-
-                </div> <!-- /bgrid -->
-
-            </div> <!-- end features-list -->
-
-        </div> <!-- end about-features -->
-
-        <div class="row about-how">
-
-            <h1 class="intro-header" data-aos="fade-up">How The App Works?</h1>
-
-            <div class="about-how-content" data-aos="fade-up">
-                <div class="about-how-steps block-1-2 block-tab-full group">
-
-                    <div class="bgrid step" data-item="1">
-                        <h3>Permissions</h3>
-                        <p>To provide a seamless music experience, the app requires **storage permission** to access
-                            audio files on your device. This allows the app to scan, load, and play your favorite songs
-                            without any hassle.</p>
-                    </div>
-
-                    <div class="bgrid step" data-item="2">
-                        <h3>Storage</h3>
-                        <p>The app efficiently manages your storage by organizing your audio files. You can also
-                            **exclude specific folders** to keep unwanted tracks from appearing in your library. Since
-                            folder blocking modifies storage access, it requires permission to function properly.</p>
-                    </div>
-
-                    <div class="bgrid step" data-item="3">
-                        <h3>Playlist</h3>
-                        <p>Create and manage your own **custom playlists**! Easily add, remove, and reorder songs to
-                            personalize your listening experience. Whether it's a workout mix or a chill session, your
-                            music is just a tap away.</p>
-                    </div>
-
-                    <div class="bgrid step" data-item="4">
-                        <h3>Lyrics</h3>
-                        <p>Enjoy **real-time synced lyrics** while listening to your favorite songs. The app fetches
-                            lyrics from an **online API** based on the song's metadata, ensuring accurate and up-to-date
-                            lyrics for an immersive music experience.</p>
-                    </div>
-
-                </div>
-            </div> <!-- end about-how-content -->
-
-        </div> <!-- end about-how -->
-
-        <div class="row about-bottom-image">
-
-            <img src="images/app-screens-1200.png" srcset="images/app-screens-600.png 600w, 
-                        images/app-screens-1200.png 1200w, 
-                        images/app-screens-2800.png 2800w" sizes="(max-width: 2800px) 100vw, 2800px"
-                alt="App Screenshots" data-aos="fade-up">
-
-        </div> <!-- end about-bottom-image -->
-
-    </section> <!-- end about -->
-
-
-    <!-- pricing
-    ================================================== -->
-    <section id="pricing">
-        <div class="row pricing-content">
-
-            <div class="col-four pricing-intro">
-                <h1 class="intro-header" data-aos="fade-up">Our Pricing Options</h1>
-
-                <p data-aos="fade-up">We offer a "free plan" with no ads for an uninterrupted music experience. Enjoy
-                    listening to your favorite tracks without any interruptions!
-                    <br><br>For users looking for additional features, we offer a "premium plan" available for a
-                    one-time purchase of $1.99. Unlock a host of exciting features, including enhanced customization
-                    options, exclusive themes, and more! The premium plan is designed to enhance your overall experience
-                    with Groovy Music Player.
-                </p>
-            </div>
-
-            <div class="col-eight pricing-table">
-                <div class="row">
-
-                    <div class="col-six plan-wrap">
-                        <div class="plan-block" data-aos="fade-up">
-
-                            <div class="plan-top-part">
-                                <h3 class="plan-block-title">Free Plan</h3>
-                                <p class="plan-block-price"><sup>$</sup>0</p>
-                                <p class="plan-block-per">Ads free forever</p>
-                            </div>
-
-                            <div class="plan-bottom-part">
-                                <ul class="plan-block-features">
-                                    <li><span>All</span> Playback Options</li>
-                                    <li><span>Blocking</span> Folders</li>
-                                    <li><span>Lyrics</span> Support</li>
-                                    <li><span>Playlist</span> Customization</li>
-                                    <li><span>Background</span> Playback</li>
-                                </ul>
-
-                                <a class="button button-primary large"
-                                    href="https://play.google.com/store/apps/details?id=com.bitmavrick.groovy">Get
-                                    Started</a>
-                            </div>
-
-                        </div>
-                    </div> <!-- end plan-wrap -->
-
-                    <div class="col-six plan-wrap">
-                        <div class="plan-block primary" data-aos="fade-up">
-
-                            <div class="plan-top-part">
-                                <h3 class="plan-block-title">Premium Plan</h3>
-                                <p class="plan-block-price"><sup>$</sup>3.99</p>
-                                <p class="plan-block-per">Forever</p>
-                            </div>
-
-                            <div class="plan-bottom-part">
-                                <ul class="plan-block-features">
-                                    <li><span>Tag</span> Editor</li>
-                                    <li><span>Extra Music Control</span> Option</li>
-                                    <li><span>Extra Theme</span> Color</li>
-                                    <li><span>Speed & Pitch</span> Control</li>
-                                    <li>And <span>More ...</span></li>
-                                </ul>
-
-                                <a class="button button-primary large"
-                                    href="https://play.google.com/store/apps/details?id=com.bitmavrick.groovy">Get
-                                    Started</a>
-                            </div>
-
-                        </div>
-                    </div> <!-- end plan-wrap -->
-
-                </div>
-            </div> <!-- end pricing-table -->
-
-        </div> <!-- end pricing-content -->
-    </section> <!-- end pricing -->
-
-
-    <!-- Testimonials Section
-    ================================================== -->
-    <section id="testimonials">
-
-        <div class="row">
-            <div class="col-twelve">
-                <h1 class="intro-header" data-aos="fade-up">What They Say About Our App.</h1>
+            
+            <div class="hero-image">
+                <img src="images/hero-img.png" alt="Groovy Music App Screenshot">
             </div>
         </div>
+    </section>
 
-        <div class="row owl-wrap">
+    <!-- About Section -->
+    <section id="about" class="container py-16">
+        <div class="text-center mb-8">
+            <h2 style="color: var(--md-sys-color-primary);">Beautiful Material You Design</h2>
+            <p class="lead" style="max-width: 800px; margin: 0 auto;">Groovy is designed with Material You 3 to provide a modern Android experience. With dynamic colors, a clean Pixel-inspired interface, smooth animations, and responsive layouts, every song feels unique as the Now Playing screen adapts its colors to your album artwork.</p>
+        </div>
+        
+        <div class="flex justify-center mt-8">
+            <img src="images/app-screens-1200.png" alt="Groovy Material You Interface" style="border-radius: var(--shape-extra-large); box-shadow: var(--elevation-2);">
+        </div>
+    </section>
 
-            <div id="testimonial-slider" data-aos="fade-up">
-
-                <div class="slides owl-carousel">
-
-                    <div>
-                        <p>
-                            Absolutely a great music app, but more importantly: no creepy privacy nonsense. For me, it
-                            has all the functionality that I want. A good way to organise your library and to play songs
-                            as you see fit. I don't want this to be a novel of a review, so just go and see for
-                            yourself, if this fits your needs.
-                        </p>
-
-                        <div class="testimonial-author">
-                            <img src="images/avatars/user-01.jpg" alt="Author image">
-                            <div class="author-info">
-                                Delta Novum
-                                <span>Google Play</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div>
-                        <p>
-                            A free, 0 add music player just making off o publicity and word of mouth,this is the best
-                            mp3 player I ever used, no adds and free, I used it on my old phone as a way to listen to
-                            music and it's perfect,even a audio equalizer built in the app, as long as you have some
-                            local music, it can play it without a problem 10/10
-                        </p>
-
-                        <div class="testimonial-author">
-                            <img src="images/avatars/user-01.jpg" alt="Author image">
-                            <div class="author-info">
-                                A A
-                                <span>Google Play</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div>
-                        <p>
-                            I love Music Player that offers colorful UI. Please don't stop developing this app, and add
-                            more features like Now Playing themes (Gradient, Material3, Adaptive), and the option to
-                            disable the album art display in lockscreen. Thank you! ☺️
-                        </p>
-
-                        <div class="testimonial-author">
-                            <img src="images/avatars/user-01.jpg" alt="Author image">
-                            <div class="author-info">
-                                Owa SB
-                                <span>Google Play</span>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div>
-                        <p>
-                            One of the simplest and cleanest music players. I was looking for an easy-to-use music
-                            player for my mom's phone since she isn't very skilled with tech, and this is hands-down the
-                            best in this category, the easiest I have found, even easier than Frolomuse. I also
-                            appreciate it has no ads and the app doesn't collect any data. Awesome.
-                        </p>
-
-                        <div class="testimonial-author">
-                            <img src="images/avatars/user-01.jpg" alt="Author image">
-                            <div class="author-info">
-                                Diego Almeida
-                                <span>Google Play</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div>
-                        <p>
-                            So it's lightweight and the interface is user friendly for any kind of user . Reliable and
-                            it's ad free guyz. Hat's off💚❤️
-                        </p>
-
-                        <div class="testimonial-author">
-                            <img src="images/avatars/user-01.jpg" alt="Author image">
-                            <div class="author-info">
-                                Mr Nine Gaming
-                                <span>Google Play</span>
-                            </div>
-                        </div>
-                    </div>
-
-                </div> <!-- end slides -->
-
-            </div> <!-- end testimonial-slider -->
-
-        </div> <!-- end flex-container -->
-
-    </section> <!-- end testimonials -->
-
-
-    <!-- download
-    ================================================== -->
-    <section id="download">
-
-        <div class="row">
-            <div class="col-full">
-                <h1 class="intro-header" data-aos="fade-up">Download Our App Today!</h1>
-
-                <p class="lead" data-aos="fade-up">
-                    Experience a seamless and ad-free music journey with Groovy Music Player. Enjoy a beautifully
-                    designed interface, create custom playlists, sync lyrics in real-time, and personalize your
-                    listening experience with Material You design.
-                    <br><br>Get started for free with no ads, or unlock additional premium features with a one-time
-                    purchase of $1.99.
-                    Download now and take your music anywhere!
-                </p>
-
-                <ul class="download-badges">
-                    <li><a href="https://play.google.com/store/apps/details?id=com.bitmavrick.groovy" title=""
-                            class="badge-googleplay" data-aos="fade-up">Play Store</a></li>
-                </ul>
-
-            </div>
+    <!-- Features Grid -->
+    <section id="features" class="container py-16">
+        <div class="features-header">
+            <h2>Why Choose Groovy?</h2>
+            <p class="lead" style="color: var(--md-sys-color-on-surface-variant);">A fast, elegant, and feature-rich music player tailored for local music lovers.</p>
         </div>
 
-    </section> <!-- end download -->
+        <div class="grid grid-cols-3">
+            <div class="card card-primary">
+                <div class="card-icon"><i class="ph-fill ph-speaker-hifi"></i></div>
+                <h3>Hi-Res Audio</h3>
+                <p>Enjoy high-quality audio playback. Groovy supports almost every popular format including MP3, FLAC, WAV, AAC, OGG, and more, so you never worry about compatibility.</p>
+            </div>
 
+            <div class="card">
+                <div class="card-icon"><i class="ph-fill ph-equalizer"></i></div>
+                <h3>Powerful 5-band EQ</h3>
+                <p>Customize your sound exactly the way you like it with our built-in 5-band equalizer, bass and treble fine-tuning, and personalized audio presets.</p>
+            </div>
 
-    <!-- footer
-    ================================================== -->
+            <div class="card">
+                <div class="card-icon"><i class="ph-fill ph-microphone-stage"></i></div>
+                <h3>Lyrics Support</h3>
+                <p>Sing along with your favorite songs. Groovy supports embedded, synchronized, and unsynchronized lyrics, along with online lyrics lookup.</p>
+            </div>
+
+            <div class="card">
+                <div class="card-icon"><i class="ph-fill ph-folder-notch-open"></i></div>
+                <h3>Organize Your Way</h3>
+                <p>Browse by songs, albums, artists, playlists, genres, or folders. Hide folders you don't want scanned so only the music you care about appears.</p>
+            </div>
+
+            <div class="card">
+                <div class="card-icon"><i class="ph-fill ph-shield-check"></i></div>
+                <h3>Privacy Focused</h3>
+                <p>Groovy focuses on what matters most: your own music. No subscriptions, no streaming, no accounts required. Your music stays securely on your device.</p>
+            </div>
+
+            <div class="card">
+                <div class="card-icon"><i class="ph-fill ph-prohibit-inset"></i></div>
+                <h3>Zero Ads</h3>
+                <p>Enjoy your music without interruptions! Groovy is completely ad-free, giving you a smooth and distraction-free listening experience.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- How it Works -->
+    <section class="container py-16">
+        <div class="features-header">
+            <h2>How It Works</h2>
+        </div>
+        <div class="grid grid-cols-2 gap-12">
+            <div>
+                <div class="step-number">01</div>
+                <h3>Permissions & Storage</h3>
+                <p>To provide a seamless music experience, Groovy requests basic storage permission to scan, load, and play your local audio files. You can also exclude specific folders from the library.</p>
+            </div>
+            <div>
+                <div class="step-number">02</div>
+                <h3>Playlists & Organization</h3>
+                <p>Create unlimited custom playlists, sort your tracks by date, duration, or name, and efficiently manage your entire offline library with just a few taps.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section id="pricing" class="container py-16">
+        <div class="features-header">
+            <h2>Simple Pricing</h2>
+            <p class="lead" style="color: var(--md-sys-color-on-surface-variant);">No subscriptions, just music.</p>
+        </div>
+
+        <div class="grid grid-cols-2" style="max-width: 800px; margin: 0 auto;">
+            <!-- Free Plan -->
+            <div class="card">
+                <div class="pricing-card">
+                    <h3>Free Plan</h3>
+                    <div class="pricing-price">$0</div>
+                    <p style="color: var(--md-sys-color-on-surface-variant);">Ads free forever</p>
+                    <ul class="pricing-features">
+                        <li>All Playback Options</li>
+                        <li>Blocking Folders</li>
+                        <li>Lyrics Support</li>
+                        <li>Playlist Customization</li>
+                        <li>Background Playback</li>
+                    </ul>
+                    <a href="https://play.google.com/store/apps/details?id=com.bitmavrick.groovy" class="btn btn-tonal">Get Started</a>
+                </div>
+            </div>
+
+            <!-- Premium Plan -->
+            <div class="card card-primary">
+                <div class="pricing-card">
+                    <h3>Premium Plan</h3>
+                    <div class="pricing-price">$3.99</div>
+                    <p style="color: var(--md-sys-color-on-primary-container);">One-time purchase, forever</p>
+                    <ul class="pricing-features">
+                        <li>Tag Editor</li>
+                        <li>Extra Music Control Options</li>
+                        <li>Extra Theme Colors</li>
+                        <li>Speed & Pitch Control</li>
+                        <li>And Much More...</li>
+                    </ul>
+                    <a href="https://play.google.com/store/apps/details?id=com.bitmavrick.groovy" class="btn btn-primary">Get Premium</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="container py-16">
+        <div class="features-header">
+            <h2>What Users Say</h2>
+        </div>
+
+        <div class="grid grid-cols-3">
+            <div class="testimonial-card">
+                <p>"Absolutely a great music app, but more importantly: no creepy privacy nonsense. For me, it has all the functionality that I want. A good way to organise your library."</p>
+                <div class="testimonial-author">
+                    <img src="images/avatars/user-01.jpg" alt="Delta Novum" class="testimonial-avatar">
+                    <div>
+                        <strong>Delta Novum</strong>
+                        <div style="font-size: 0.85rem; color: var(--md-sys-color-on-surface-variant);">Google Play</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <p>"I love Music Player that offers colorful UI. Please don't stop developing this app, and add more features like Now Playing themes (Gradient, Material3, Adaptive)."</p>
+                <div class="testimonial-author">
+                    <img src="images/avatars/user-01.jpg" alt="Owa SB" class="testimonial-avatar">
+                    <div>
+                        <strong>Owa SB</strong>
+                        <div style="font-size: 0.85rem; color: var(--md-sys-color-on-surface-variant);">Google Play</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <p>"One of the simplest and cleanest music players. I was looking for an easy-to-use music player and this is hands-down the best in this category. Awesome."</p>
+                <div class="testimonial-author">
+                    <img src="images/avatars/user-01.jpg" alt="Diego Almeida" class="testimonial-avatar">
+                    <div>
+                        <strong>Diego Almeida</strong>
+                        <div style="font-size: 0.85rem; color: var(--md-sys-color-on-surface-variant);">Google Play</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="download" class="container py-16">
+        <div class="cta-section">
+            <h2>Ready to rediscover your music?</h2>
+            <p class="lead mt-4 mb-8" style="max-width: 600px; margin-left: auto; margin-right: auto; color: var(--md-sys-color-on-primary-container);">Download Groovy today and enjoy a modern offline music player with beautiful Material You design and powerful audio controls.</p>
+            <div class="flex justify-center gap-4" style="flex-wrap: wrap;">
+                <a href="https://play.google.com/store/apps/details?id=com.bitmavrick.groovy" class="btn btn-primary">
+                    <i class="ph-fill ph-download-simple"></i> Download Now
+                </a>
+                <a href="#" class="btn btn-tonal">
+                    <i class="ph-fill ph-ticket"></i> Request Free Promo Code
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer>
-        <div class="row">
-            <div class="col-twelve">
-                <div class="copyright">
-                    <span>© Copyright <span id="current-year"></span> Groovy.</span>
-                    <span>Design by <a href="https://github.com/BitMavrick">BitMavrick</a></span>
-                </div>
-
-                <div id="go-top">
-                    <a class="smoothscroll" title="Back to Top" href="#top"><i class="icon-arrow-up"></i></a>
-                </div>
+        <div class="container">
+            <div class="social-links">
+                <a href="https://github.com/BitMavrick" aria-label="GitHub"><i class="ph-fill ph-github-logo"></i></a>
+                <a href="https://x.com/TheAlter72" aria-label="Twitter"><i class="ph-fill ph-twitter-logo"></i></a>
+                <a href="https://www.instagram.com/_bitmavrick" aria-label="Instagram"><i class="ph-fill ph-instagram-logo"></i></a>
+                <a href="https://www.youtube.com/@BitMavrick" aria-label="YouTube"><i class="ph-fill ph-youtube-logo"></i></a>
             </div>
-        </div> <!-- end footer-bottom -->
+            
+            <div style="color: var(--md-sys-color-on-surface-variant);">
+                &copy; <span id="current-year"></span> Groovy Music. Design by <a href="https://github.com/BitMavrick" style="font-weight: 600;">BitMavrick</a>
+            </div>
+        </div>
     </footer>
 
     <script>
         document.getElementById("current-year").textContent = new Date().getFullYear();
     </script>
-
-    <div id="preloader">
-        <div id="loader"></div>
-    </div>
-
-    <!-- Java Script
-    ================================================== -->
-    <script src="js/jquery-2.1.3.min.js"></script>
-    <script src="js/plugins.js"></script>
-    <script src="js/main.js"></script>
-
 </body>
-
 </html>
